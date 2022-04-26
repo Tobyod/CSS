@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div and Span</title>
+    <!-- Interanl CSS starts here -->
+    <style>
+      body {
+        background-color: #fbfbfe;
+        color: #17230b;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      p {
+        font-size: 24px;
+      }
+      ul {
+        /* This gets rid of the bullet points beside each list iten. */
+        list-style: none;
+      }
+      li {
+        /* Adds spacing around the outside of an element. */
+        padding: 5px;
+
+        /* Adds spacing on the inside of an element. */
+        margin: 4px;
+
+        font-size: 20px;
+      }
+      #styled-by-id {
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
+      }
+      .nav-link {
+        margin: 4px;
+
+        /* Adds styling to the border of the element */
+        border: 2px solid black;
+
+        padding: 5px;
+
+        background-color: #003100;
+        color: #eeffee;
+      }
+
+      /* Uses descendant selectors to style all list items that are in the nav-link class elements */
+      .nav-link li {
+        display: inline-block;
+      }
+    </style>
+    <!-- Internal CSS ends here -->
+  </head>
+  <body>
+    <header>
+      <h1>Div and Span</h1>
+      <nav>
+        <ul>
+          <a href="index.html" class="nav-link"><li>Inline CSS Page</li></a>
+          <a href="internal-css.html" class="nav-link"
+            ><li>Internal CSS Page</li></a
+          >
+          <a href="external-css.html" class="nav-link"
+            ><li>External CSS Page</li></a
+          >
+          <a href="testing-cascading.html" class="nav-link"
+            ><li>Testing Cascading Page</li></a
+          >
+          <a href="classes-and-ids.html" class="nav-link"
+            ><li>Classes and IDs Page</li></a
+          >
+          <a href="div-and-span.html" class="nav-link"
+            ><li>Div and Span Page</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div style="background-color: ghostwhite; height: 140px; width: auto">
+        <p>This page shows the effects of Classes and IDs on a webpage.</p>
+        <p id="styled-by-id">
+          This paragraph will show the effect of giving an element an ID and
+          <span style="background-color: #c9e6c9; font-weight: bolder"
+            >styling</span
+          >
+          that ID.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
