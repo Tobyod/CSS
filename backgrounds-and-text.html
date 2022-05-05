@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgrounds and Text</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/css-pages-style.css"
+    />
+    <style>
+      body {
+        margin: 5% 10%;
+        color: #000067;
+        font-size: 20 px;
+        background-color: #f6f6fd;
+      }
+      h1 {
+        font-size: 48px;
+        text-align: center;
+      }
+      div p {
+        font-weight: bold;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: antiquewhite;
+      }
+      #styled-by-id {
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
+      }
+      div {
+        margin: 4px;
+
+        /* Adds styling to the border of the element */
+        border: 2px solid black;
+
+        padding: 5px;
+
+        background-color: ghostwhite;
+      }
+      nav a {
+        margin: 4px;
+
+        /* Adds styling to the border of the element */
+        border: 2px solid black;
+
+        padding: 5px;
+
+        background-color: #003100;
+        color: #eeffee;
+      }
+      nav a:hover,
+      nav a:focus {
+        background-color: #eeffee;
+        color: #003100;
+      }
+      nav a:visited {
+        color: cadetblue;
+      }
+      /* Uses descendant selectors to style all list items that are in the nav-link class elements */
+      nav li {
+        display: inline-block;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      img {
+        margin: 10px;
+        padding: 10px;
+        background-color: antiquewhite;
+        border: 2px solid black;
+      }
+      iframe {
+        margin: 10px;
+        padding: 10px;
+        background-color: antiquewhite;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="index.html"><li>Inline CSS Page</li></a>
+        <a href="internal-css.html"><li>Internal CSS Page</li></a>
+        <a href="external-css.html"><li>External CSS Page</li></a>
+        <a href="testing-cascading.html"><li>Testing Cascading Page</li></a>
+        <a href="classes-and-ids.html"><li>Classes and IDs Page</li></a>
+        <a href="div-and-span.html"><li>Div and Span Page</li></a>
+      </ul>
+    </nav>
+    <main>
+      <h1>Backgrounds and Text</h1>
+      <div>
+        <p>
+          among among among among among among among among among among among
+          among among among among among among among among among among among
+          among among among among among among among among among among among
+          among among among among among among among among among among among
+          among among among among among among among among among among among
+          among among among among
+        </p>
+        <p>
+          us us us us us us us us us us us us us us us us us us us us us us us
+          us us us us us us us us us us us us us us us us us us us us us us us
+          us us us us us us us us us us us us us us us us us us us us us us us
+          us us us us us us us us us us
+        </p>
+      </div>
+      <img
+        class="center"
+        src="https://media.discordapp.net/attachments/895059520139718677/971794811457798164/IMG_9866.png?width=610&height=513"
+        alt="An image of a funny meme"
+        height="513"
+        width="610"
+      />
+      <iframe
+        class="center"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/4qnzBqfHE1g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </main>
+  </body>
+</html>
