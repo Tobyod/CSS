@@ -93,7 +93,10 @@
         /* Sets the text to have a bolder font weight. */
         font-weight: bolder;
       }
-
+      .nav-link {
+        transition: transform 0.5s ease-in-out;
+      }
+      .nav-link:hover
       /* 
       Swaps out the colour scheme of anchors in the nav when they are hovered over 
       or focused on.
@@ -102,6 +105,12 @@
       nav a:focus {
         background-color: #f0f8ff;
         color: #00549e;
+
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
       }
 
       /* Changes the colour of the links that have been visited already. */
@@ -134,7 +143,12 @@
       h1 {
         position: relative;
         left: 50%;
-        transform: translateX(-50%);
+
+        -webkit-transform: translateX(-50%) rotateY(180deg) rotateX(180deg);
+        -moz-transform: translateX(-50%) rotateY(180deg) rotateX(180deg);
+        -ms-transform: translateX(-50%) rotateY(180deg) rotateX(180deg);
+        -o-transform: translateX(-50%) rotateY(180deg) rotateX(180deg);
+        transform: translateX(-50%) rotateY(80deg) rotateX(180deg);
 
         display: inline-block;
 
