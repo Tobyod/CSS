@@ -65,6 +65,8 @@
         /* Adds 4 pixels of space around the outside of each anchor in the nav */
         margin: 4px;
 
+        display: inline-block;
+
         /* Adds styling to the border of the element */
         border: 2px solid black;
 
@@ -92,11 +94,10 @@
 
         /* Sets the text to have a bolder font weight. */
         font-weight: bolder;
-      }
-      .nav-link {
+
         transition: transform 0.5s ease-in-out;
       }
-      .nav-link:hover
+
       /* 
       Swaps out the colour scheme of anchors in the nav when they are hovered over 
       or focused on.
@@ -176,6 +177,12 @@
         font-weight: bold;
         position: relative;
         top: 50%;
+
+        -ms-transform: skew(20deg);
+        -o-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+        -webkit-transform: skew(20deg);
+        transform: skew(20deg);
       }
       section div {
         position: relative;
