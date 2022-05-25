@@ -34,6 +34,127 @@
         /* background-size: 100% auto; */
 
         margin: 0;
+
+        /* 
+          Allows use to define a name for our animation so 
+          that multiple animataions can be created for a single
+          web page and the animation can be used for several 
+          different elements if we want.
+        */
+        /* animation-name: fade-in; */
+
+        /* This defines how long the animation will take. */
+        /* animation-duration: 1s; */
+
+        /*
+          This defines how the animation will look withen 
+          that 1s timeframe.
+        */
+        /* animation-timing-function: ease-in; */
+
+        /* 
+          This causes a 0.5 second delay before the animation
+          starts.
+        */
+        /* animation-delay: 0.5s; */
+
+        /* 
+          This defines how many times the animation will run.
+          I don't actually want this to run two times, so I have
+          commented that property out.
+        */
+        /* animation-iteration-count: 2; */
+
+        /* 
+          This defines the direction your animation will run.
+          normal is the default value, so I don't actually have
+          to define this property.  
+        */
+        /* animation-direction: normal; */
+
+        /* 
+          This allows us to keep the styling that occurs at the 
+          end of the animation.
+        */
+        /* animation-fill-mode: forwards; */
+
+        /* 
+          This is the shorthand for the animation that includes 
+          all of the above animation properties.
+        */
+
+        -webkit-animation: fade-in 2s ease-in 0.5s forwards;
+        -o-animation: fade-in 2s ease-in 0.5s forwards;
+        -moz-animation: fade-in 2s ease-in 0.5s forwards;
+        animation: fade-in 2s ease-in 0.5s forwards;
+      }
+
+      @-moz-keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @-o-keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        from {
+          position: relative;
+          top: 200px;
+
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @keyframes square {
+        0% {
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        25% {
+          left: 200px;
+        }
+        50% {
+          top: 200px;
+        }
+        75% {
+          left: 0;
+        }
+        100% {
+          top: 0;
+        }
       }
 
       nav {
